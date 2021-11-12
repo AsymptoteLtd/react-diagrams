@@ -1,0 +1,22 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"outDir": "dist",
+		"rootDir": "src",
+		"declarationDir": "dist/@types"
+	},
+	"include": [
+		"./src"
+	],
+	"references": [
+		{
+			"path": "../react-canvas-core"
+		},
+		{
+			"path": "../react-diagrams-defaults"
+		},
+		{
+			"path": "../react-diagrams-routing"
+		}
+	]
+}
