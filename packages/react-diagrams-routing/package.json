@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/projectstorm/react-diagrams.git"
+		"url": "https://github.com/AsymptoteLtd/react-diagrams.git"
 	},
 	"scripts": {
 		"clean": "rimraf ./dist",
@@ -32,9 +32,9 @@
 	"module": "./dist/index.js",
 	"typings": "./dist/@types/index",
 	"dependencies": {
-		"@projectstorm/geometry": "^6.4.2",
-		"@projectstorm/react-diagrams-core": "^6.4.2",
-		"@projectstorm/react-diagrams-defaults": "^6.4.2"
+		"@projectstorm/geometry": "https://gitpkg.now.sh/AsymptoteLtd/react-diagrams/packages/geometry?fix_undefined_to_lowercase",
+		"@projectstorm/react-diagrams-core": "https://gitpkg.now.sh/AsymptoteLtd/react-diagrams/packages/react-diagrams-core?fix_undefined_to_lowercase",
+		"@projectstorm/react-diagrams-defaults": "https://gitpkg.now.sh/AsymptoteLtd/react-diagrams/packages/react-diagrams-defaults?fix_undefined_to_lowercase"
 	},
 	"peerDependencies": {
 		"dagre": "^0.8.5",
