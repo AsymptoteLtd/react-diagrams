@@ -53,11 +53,11 @@ export class ActionEventBus {
 			return this.getActionsForType(InputType.MOUSE_UP);
 		} else if (event.type === 'keydown') {
 			// store the recorded key
-			this.keys[(event as KeyboardEvent).key.toLowerCase()] = true;
+			this.keys[(event as KeyboardEvent).key?.toLowerCase()] = true;
 			return this.getActionsForType(InputType.KEY_DOWN);
 		} else if (event.type === 'keyup') {
 			// delete the recorded key
-			delete this.keys[(event as KeyboardEvent).key.toLowerCase()];
+			delete this.keys[(event as KeyboardEvent).key?.toLowerCase()];
 			return this.getActionsForType(InputType.KEY_UP);
 		} else if (event.type === 'mousemove') {
 			return this.getActionsForType(InputType.MOUSE_MOVE);
